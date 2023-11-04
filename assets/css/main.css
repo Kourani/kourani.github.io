@@ -2340,7 +2340,8 @@ input, select, textarea {
 		   .timeline ul li {
 			 padding: 20px; /*controls box size and dot placement */
 			 background-color: white; /* this changes the background color of the boxes in the line */
-			 color: darkgray; /*#f4cccd; /* this controls the color of the words in the boxes */
+			 color: #39454b; /*#f4cccd; /* this controls the color of the words in the boxes */
+			 font-family: sans-serif;
 			 border-radius: 20px;
 			 margin-bottom: 20px;
 
