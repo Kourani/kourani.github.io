@@ -2316,15 +2316,13 @@ input, select, textarea {
 
 
 		.container {
-			/* min-height: 100vh; */
 			 width: 100%;
-			 display: flex; /* timeline format */
-			 align-items: center; /*no major change..... PURPOSE ??*/
-			 justify-content: center; /*centers the features items: title and others*/
-			 padding: 100px 0;  /*affects the timeline: vertical shift */
-			 /*background-color: #660000; */ /*this changes the background color in the footer and middle page to black */
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+			 padding: 100px 0;
+		}
 
-		   }
 		   .timeline {
 			 width: 80%;
 			 height: auto;
@@ -2376,62 +2374,64 @@ input, select, textarea {
 			 .timeline:before {
 			   content: "";
 			   position: absolute;
-			   top: -200px; /*also shifts the center line*/
+			   top: -200px; 
 			   left: 50%;
 			   transform: translateX(-50%);
-			   /*transform: translateY(-12%);*/ /*this shifted the center line upward */
+			   transform: translateY(-10%);
 			   width: 2px;
-			   height: 100%; /* controls the length of the line*/
-			   background-color: #660000; /*this changes the color of the line down the center */
+			   height: 100%;
+			   background-color: #660000;
 			 }
-			 .timeline ul li {
+
+			.timeline ul li {
 			   width: 50%;
 			   position: relative;
-			   margin-bottom: 30px; /*spacing between boxes */
-			   top: -200px; /* shifts boxes, dots and date up if negative and down if positive */
-			 }
-			 .timeline ul li:nth-child(odd) {
-			   float: left; /* counts boxes if odd float it on the left side of the line */
-			   clear: right; /* tells transformation, move on the x right or left */
-			   transform: translateX(-30px); /*quantifies right and left movement */
+			   margin-bottom: 30px;
+			   top: -200px;
+			}
+
+			.timeline ul li:nth-child(odd) {
+			   float: left;
+			   clear: right;
+			   transform: translateX(-30px);
 			   border-radius: 20px 0px 20px 20px;
-			 }
+			}
 
-			 .timeline ul li:nth-child(even) {
-			   float: right; /*if box number is even float to the right of the line */
-			   clear: left; /*tells transformation, move on the x right or left */
-			   transform: translateX(30px); /* quantifies right and left */
-
+			.timeline ul li:nth-child(even) {
+			   float: right;
+			   clear: left;
+			   transform: translateX(30px);
 			   border-radius: 0px 20px 20px 20px;
-			 }
-			 .timeline ul li::before {
+			}
+
+			.timeline ul li::before {
 			   content: "";
 			   position: absolute;
 			   height: 20px;
 			   width: 20px;
 			   border-radius: 50%;
-			   background-color: #660000; /* this changes the color of the dots on the line */
-			   top: 0px; /* controls the placement of the dots on the line*/
-			 }
-			 .timeline ul li:nth-child(odd)::before {
+			   background-color: #660000;
+			   top: 0px;
+			}
+
+			.timeline ul li:nth-child(odd)::before {
 			   transform: translate(50%, -50%);
 			   right: -30px;
+			}
 
-			 }
-			 .timeline ul li:nth-child(even)::before {
+			.timeline ul li:nth-child(even)::before {
 			   transform: translate(-50%, -50%);
-			   left: -30px; /* controls the x axis of the right side of the timeline: dots and boxes..... larger negative more left larger positive more right */
+			   left: -30px;
+			}
 
-			 }
-
-			 .timeline-content .date {
+			.timeline-content .date {
 			   position: absolute;
 			   top: -30px;
-			 }
-			 .timeline ul li:hover::before {
-			   background-color: #e883f0; /*#ccf4f3;*/ /*#006666; /* choose one */
-				/*background-image: url('images/yellow.png');*/
-			 }
+			}
+
+			.timeline ul li:hover::before {
+			   background-color: #e883f0;
+			}
 
 
 
