@@ -2428,7 +2428,7 @@ input, select, textarea {
 			   top: -30px;
 			 }
 			 .timeline ul li:hover::before {
-			   background-color: #006994; /*#ccf4f3;*/ /*#006666; /* choose one */
+			   background-color: #e883f0; /*#ccf4f3;*/ /*#006666; /* choose one */
 				/*background-image: url('images/yellow.png');*/
 			 }
 
