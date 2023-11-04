@@ -2313,7 +2313,7 @@ input, select, textarea {
 
 
 
-		
+
 
 		.container {
 			/* min-height: 100vh; */
@@ -2339,8 +2339,8 @@ input, select, textarea {
 		   }
 		   .timeline ul li {
 			 padding: 20px; /*controls box size and dot placement */
-			 background-color: #660000; /* this changes the background color of the boxes in the line */
-			 color: #f9e5e6; /*#f4cccd; /* this controls the color of the words in the boxes */
+			 background-color: white; /* this changes the background color of the boxes in the line */
+			 color: darkgray; /*#f4cccd; /* this controls the color of the words in the boxes */
 			 border-radius: 20px;
 			 margin-bottom: 20px;
 
