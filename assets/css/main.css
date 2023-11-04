@@ -2310,3 +2310,128 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+		
+
+		.container {
+			/* min-height: 100vh; */
+			 width: 100%;
+			 display: flex; /* timeline format */
+			 align-items: center; /*no major change..... PURPOSE ??*/
+			 justify-content: center; /*centers the features items: title and others*/
+			 padding: 100px 0;  /*affects the timeline: vertical shift */
+			 /*background-color: #660000; */ /*this changes the background color in the footer and middle page to black */
+
+		   }
+		   .timeline {
+			 width: 80%;
+			 height: auto;
+			 max-width: 800px;
+			 margin: 0 auto;
+			 position: relative;
+
+		   }
+
+		   .timeline ul {
+			 list-style: none;
+		   }
+		   .timeline ul li {
+			 padding: 20px; /*controls box size and dot placement */
+			 background-color: #660000; /* this changes the background color of the boxes in the line */
+			 color: #f9e5e6; /*#f4cccd; /* this controls the color of the words in the boxes */
+			 border-radius: 20px;
+			 margin-bottom: 20px;
+
+		   }
+		   .timeline ul li:last-child {
+			 margin-bottom: 0;
+		   }
+		   .timeline-content h1 {
+			 /*font-weight: bold; /* this controls the style of heading of each text */
+			 font-size: 25px; /*changes the size of the title in the boxes*/
+			 line-height: 30px;
+			 margin-bottom: 10px;
+			 /*font-family: 'Rye', cursive; */
+			 /*font-family: "Times New Roman", Times, serif;*/
+			 font-family: 'Stardos Stencil', cursive;
+		   }
+		   .timeline-content p {
+			 font-size: 20px; /* font size under the titles */
+			 line-height: 35px; /* controls the size and space of the wording within the boxes */
+			 /*font-weight: bold;*/
+			 font-family: "Times New Roman", Times, serif;
+		   }
+		   .timeline-content .date {
+			 font-size: 12px;
+			 font-weight: bold; /* style of the date above the box */
+			 margin-bottom: 10px;
+			 letter-spacing: 2px; /* spaces between letters*/
+			 color: #660000; /* changes color: RED */
+
+		   }
+		   @media only screen and (min-width: 768px) {
+			 .timeline:before {
+			   content: "";
+			   position: absolute;
+			   top: -200px; /*also shifts the center line*/
+			   left: 50%;
+			   transform: translateX(-50%);
+			   /*transform: translateY(-12%);*/ /*this shifted the center line upward */
+			   width: 2px;
+			   height: 100%; /* controls the length of the line*/
+			   background-color: #660000; /*this changes the color of the line down the center */
+			 }
+			 .timeline ul li {
+			   width: 50%;
+			   position: relative;
+			   margin-bottom: 30px; /*spacing between boxes */
+			   top: -200px; /* shifts boxes, dots and date up if negative and down if positive */
+			 }
+			 .timeline ul li:nth-child(odd) {
+			   float: left; /* counts boxes if odd float it on the left side of the line */
+			   clear: right; /* tells transformation, move on the x right or left */
+			   transform: translateX(-30px); /*quantifies right and left movement */
+			   border-radius: 20px 0px 20px 20px;
+			 }
+
+			 .timeline ul li:nth-child(even) {
+			   float: right; /*if box number is even float to the right of the line */
+			   clear: left; /*tells transformation, move on the x right or left */
+			   transform: translateX(30px); /* quantifies right and left */
+
+			   border-radius: 0px 20px 20px 20px;
+			 }
+			 .timeline ul li::before {
+			   content: "";
+			   position: absolute;
+			   height: 20px;
+			   width: 20px;
+			   border-radius: 50%;
+			   background-color: #660000; /* this changes the color of the dots on the line */
+			   top: 0px; /* controls the placement of the dots on the line*/
+			 }
+			 .timeline ul li:nth-child(odd)::before {
+			   transform: translate(50%, -50%);
+			   right: -30px;
+
+			 }
+			 .timeline ul li:nth-child(even)::before {
+			   transform: translate(-50%, -50%);
+			   left: -30px; /* controls the x axis of the right side of the timeline: dots and boxes..... larger negative more left larger positive more right */
+
+			 }
+
+			 .timeline-content .date {
+			   position: absolute;
+			   top: -30px;
+			 }
+			 .timeline ul li:hover::before {
+			   background-color: #006994; /*#ccf4f3;*/ /*#006666; /* choose one */
+				/*background-image: url('images/yellow.png');*/
+			 }
+
+
+
+		   }
