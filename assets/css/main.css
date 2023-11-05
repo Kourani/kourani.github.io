@@ -2310,3 +2310,15 @@ input, select, textarea {
 			}
 
 		}
+
+
+		.from-left .more-info {
+            display: none;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+        }
+
+        .from-left:hover .more-info {
+            display: block;
+        }
