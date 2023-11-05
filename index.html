@@ -118,7 +118,33 @@
 										<a href="https://jeanak-eats.onrender.com/">Check out Jeanak Eatsssss</a>
 									</a>
 
+									<div style="position: absolute; bottom: -30px; left: 0; display: none;">
+										<a href="https://jeanak-eats.onrender.com/">Check out</a>
+									</div>
+
 							</article>
+
+							<script>
+								document.addEventListener("DOMContentLoaded", function() {
+									const img = document.querySelector('.from-left img');
+									const infoLink = img.parentElement.nextElementSibling.querySelector('a');
+
+									img.addEventListener('mouseover', function() {
+										img.title = ""; // Clear the title attribute to prevent the default tooltip
+										infoLink.style.display = 'block'; // Show the link
+									});
+
+									img.addEventListener('mouseout', function() {
+										img.title = "Jeanak Eats"; // Reset the title attribute
+										infoLink.style.display = 'none'; // Hide the link
+									});
+								});
+								</script>
+
+
+
+
+
 							<article class="from-right">
 								<a href="images/fulls/02.png" class="image fit"><img src="images/thumbs/02.png" title="Interact" alt="" /></a>
 							</article>
@@ -126,10 +152,10 @@
 								<a href="images/fulls/03.png" class="image fit"><img src="images/thumbs/03.png" title="Car BnB" alt="" /></a>
 							</article>
 							<article class="from-right">
-								<a href="images/fulls/04.png" class="image fit"><img src="images/thumbs/04.png" title="Carry on" alt="" /></a>
+								<a href="images/fulls/04.png" class="image fit"><img src="images/thumbs/04.png" title="Fluid Flow" alt="" /></a>
 							</article>
 							<article class="from-left">
-								<a href="images/fulls/05.png" class="image fit"><img src="images/thumbs/05.png" title="The sparkling shell" alt="" /></a>
+								<a href="images/fulls/05.png" class="image fit"><img src="images/thumbs/05.png" title="Helical Microswimmer" alt="" /></a>
 							</article>
 							<article class="from-right">
 								<a href="images/fulls/06.png" class="image fit"><img src="images/thumbs/06.png" title="Bent IX" alt="" /></a>
