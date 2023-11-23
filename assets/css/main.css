@@ -666,7 +666,8 @@ input, select, textarea {
 		background-color: #98c593;
 		border: 0;
 		border-radius: 3.5em;
-		color: #ffffff;
+		color:black;
+		/* color: #ffffff; */
 		cursor: pointer;
 		display: inline-block;
 		height: 3.5em;
