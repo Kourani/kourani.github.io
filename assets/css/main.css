@@ -2312,3 +2312,10 @@ input, select, textarea {
 			}
 
 		}
+
+
+.iconic{
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
