@@ -2320,3 +2320,9 @@ input, select, textarea {
 			height: 100%;
 			background-color: #ffffff;
 		}
+
+		.mightFix{
+			display: flex;
+			flex-direction: column;
+			gap:100px;
+		}
