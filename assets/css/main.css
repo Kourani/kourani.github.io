@@ -2324,5 +2324,11 @@ input, select, textarea {
 		.mightFix{
 			display: flex;
 			flex-direction: column;
-			gap:100px;
+			gap:20px;
+		}
+
+		.eachOne{
+			display: flex;
+			flex-direction: row;
+			gap:10px
 		}
